@@ -4,86 +4,158 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="cHHRvqq3j2QTx9r1MAjVeN_R-GxbkibjfMH8XpOUZhU" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Guide Hindi</title>
+    <title>AI Guide Hindi - Seekhein AI Asaan Bhasha Mein</title>
     <style>
-        body { margin: 0; font-family: sans-serif; background: #0f172a; color: white; line-height: 1.6; text-align: center; }
-        header { background: #1e293b; padding: 40px 20px; border-bottom: 3px solid #38bdf8; }
-        .main-content { padding: 20px; max-width: 600px; margin: auto; text-align: left; }
-        .article-card { background: #1e293b; padding: 20px; border-radius: 12px; margin: 20px 0; border-left: 5px solid #38bdf8; }
+        :root { --primary: #38bdf8; --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; }
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        header { background: var(--card); padding: 50px 20px; border-bottom: 3px solid var(--primary); text-align: center; }
+        .ad-space { background: #111827; border: 1px dashed #475569; margin: 20px auto; max-width: 700px; padding: 15px; text-align: center; color: #94a3b8; font-size: 13px; border-radius: 8px; }
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+        .article-card { background: var(--card); padding: 25px; border-radius: 15px; margin-bottom: 25px; border-left: 6px solid var(--primary); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .article-card h3 { margin-top: 0; color: var(--primary); }
         .more-text { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #334155; color: #cbd5e1; }
-        .btn { display: inline-block; background: #38bdf8; color: #0f172a; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; cursor: pointer; border: none; }
-        .footer-box { background: #111827; padding: 40px 20px; margin-top: 50px; border-top: 2px solid #38bdf8; text-align: left; }
+        .btn { display: inline-block; background: var(--primary); color: #0f172a; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; cursor: pointer; border: none; margin-top: 10px; transition: 0.3s; }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        footer { background: #020617; padding: 50px 20px; margin-top: 60px; border-top: 1px solid #334155; }
+        .footer-grid { max-width: 800px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        @media (max-width: 600px) { .footer-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
     <header>
         <h1>AI Guide Hindi 🤖</h1>
-        <p>Bina English ke banein AI Expert</p>
+        <p>Bina English seekhein banein AI Expert aur badhayein apni earning!</p>
     </header>
 
-    <div style="margin: 10px auto; max-width: 600px; height: 90px; background: #1e293b; border: 1px dashed #38bdf8; display: flex; align-items: center; justify-content: center; color: #475569; font-size: 12px; border-radius: 8px;">
-        AD BLOCK: TOP BANNER
-    </div>
+    <div class="ad-space">
+        <p>ADVERTISEMENT - TOP BANNER</p>
+        </div>
 
-    <div class="main-content">
-        <h2>Latest Articles</h2>
+    <div class="container">
+        <h2>Sabse Lokpriya Articles (Popular)</h2>
 
         <div class="article-card">
-            <h3>AI For Students: Study 10x Fast! 🚀</h3>
-            <p>Ab exams ki tension khatam! Jaaniye kaise AI aapka personal tutor ban sakta hai.</p>
-            <div id="extra1" class="more-text">
-                <p>ChatGPT se aap apna syllabus pooch sakte hain. Bas likhiye: "Mujhe ye chapter 10 saal ke bache ki tarah samjhao". Ise asaan bhasha mein samajhne ke liye best hai.</p>
+            <h3>1. ChatGPT Se Paise Kaise Kamayein? 💰</h3>
+            <p>Jaaniye kaise aap ChatGPT ka use karke content writing aur freelancing se ghar baithe kama sakte hain.</p>
+            <div id="ex1" class="more-text">
+                <p>Aap ChatGPT se blog posts, emails, aur social media captions likh kar clients ko sell kar sakte hain. Fiverr aur Upwork par iski bahut demand hai.</p>
             </div>
-            <button class="btn" onclick="toggleText('extra1')">Poora Padhein</button>
+            <button class="btn" onclick="toggle('ex1')">Poora Padhein</button>
         </div>
 
         <div class="article-card" style="border-left-color: #fbbf24;">
-            <h3>Dukan ki Sales Badhayein AI se! 📈</h3>
-            <p>Seekhein kaise AI se free mein apni dukan ke poster banaye jate hain.</p>
-            <div id="extra2" class="more-text">
-                <p>Canva AI ka use karke aap apni dukan ke liye professional posters bana sakte hain. Bas apna idea likhein aur AI design de dega.</p>
+            <h3>2. Students Ke Liye Top 5 AI Tools 🎓</h3>
+            <p>Exams aur assignments ke liye ye AI tools aapka kaam 10 guna asaan kar denge.</p>
+            <div id="ex2" class="more-text">
+                <p>Photomath (Maths ke liye), Socratic (Science ke liye), aur Quillbot (Writing ke liye) best tools hain jo har student ko use karne chahiye.</p>
             </div>
-            <button class="btn" style="background:#fbbf24;" onclick="toggleText('extra2')">Poora Padhein</button>
-        </div>
-
-        <div style="margin: 30px auto; max-width: 600px; padding: 20px; background: #0f172a; border: 2px solid #334155; text-align: center; color: #475569; font-size: 14px; border-radius: 12px;">
-            SPONSORED AD SPACE
+            <button class="btn" style="background:#fbbf24;" onclick="toggle('ex2')">Poora Padhein</button>
         </div>
 
         <div class="article-card" style="border-left-color: #10b981;">
-            <h3>Teachers Ke Liye AI 📝</h3>
-            <p>2 minute mein Lesson Plan aur Quiz banayein.</p>
-            <div id="extra3" class="more-text">
-                <p>ChatGPT ka use karke teachers apne students ke liye har topic par sawal aur answers turant taiyaar kar sakte hain.</p>
+            <h3>3. AI Se Professional Logo Banayein 🎨</h3>
+            <p>Apne business ke liye bina designer ko paise diye logo banayein.</p>
+            <div id="ex3" class="more-text">
+                <p>Canva Magic Studio aur Looka AI ka use karke aap sirf apna naam likhkar hazaron logo designs turant dekh sakte hain.</p>
             </div>
-            <button class="btn" style="background:#10b981; color:white;" onclick="toggleText('extra3')">Poora Padhein</button>
+            <button class="btn" style="background:#10b981; color:white;" onclick="toggle('ex3')">Poora Padhein</button>
         </div>
 
+        <div class="ad-space" style="height: 250px; display: flex; align-items: center; justify-content: center;">
+            <p>ADVERTISEMENT - MIDDLE RECTANGLE</p>
         </div>
 
-    <div class="footer-box">
-        <div style="max-width: 600px; margin: auto;">
-            <div id="about">
-                <h2 style="color: #38bdf8;">About Us</h2>
-                <p>Hum AI ko simple bhasha mein sikhate hain taaki har Hindustani iska fayda utha sake.</p>
+        <div class="article-card" style="border-left-color: #ec4899;">
+            <h3>4. AI Video Editing: Reels Kaise Banayein? 🎥</h3>
+            <p>Bina mehnat ke viral AI reels banane ka asaan tarika.</p>
+            <div id="ex4" class="more-text">
+                <p>CapCut aur InVideo AI se aap sirf text dalkar poora video edit kar sakte hain, wo bhi background music aur captions ke saath.</p>
             </div>
-            <div id="contact" style="margin-top: 30px;">
-                <h2 style="color: #38bdf8;">Contact Us</h2>
-                <p>Email: <b>aapkaemail@gmail.com</b></p>
+            <button class="btn" style="background:#ec4899; color:white;" onclick="toggle('ex4')">Poora Padhein</button>
+        </div>
+
+        <div class="article-card" style="border-left-color: #8b5cf6;">
+            <h3>5. AI Job Interview Ki Taiyari Karein 💼</h3>
+            <p>Interview se darr lagta hai? AI ke saath practice karein.</p>
+            <div id="ex5" class="more-text">
+                <p>Google Interview Warmup tool aapko real-time feedback deta hai ki aapke answers kitne achhe hain aur unhe kaise sudharein.</p>
             </div>
+            <button class="btn" style="background:#8b5cf6; color:white;" onclick="toggle('ex5')">Poora Padhein</button>
+        </div>
+
+        <div class="article-card" style="border-left-color: #f97316;">
+            <h3>6. AI Photo Editing Hacks 📸</h3>
+            <p>Purani aur dhundhli photos ko ek click mein HD banayein.</p>
+            <div id="ex6" class="more-text">
+                <p>Remini aur Adobe Firefly ka use karke aap photo se anchahe objects hata sakte hain aur quality badha sakte hain.</p>
+            </div>
+            <button class="btn" style="background:#f97316; color:white;" onclick="toggle('ex6')">Poora Padhein</button>
+        </div>
+
+        <div class="article-card" style="border-left-color: #22c55e;">
+            <h3>7. AI Se Website Banana Seekhein 🌐</h3>
+            <p>Bina coding ke apni website 5 minute mein launch karein.</p>
+            <div id="ex7" class="more-text">
+                <p>10Web ya Durable AI se aap sirf business ka naam batakar poori website ready kar sakte hain, wo bhi images aur content ke saath.</p>
+            </div>
+            <button class="btn" style="background:#22c55e; color:white;" onclick="toggle('ex7')">Poora Padhein</button>
+        </div>
+
+        <div class="article-card" style="border-left-color: #06b6d4;">
+            <h3>8. AI Se Health Kaise Sudharein? 🥗</h3>
+            <p>AI aapka personal gym trainer aur dietician ban sakta hai.</p>
+            <div id="ex8" class="more-text">
+                <p>Gemini AI ko apna weight aur goal batayein, wo aapko poore hafte ka sasta aur desi diet plan bana kar de dega.</p>
+            </div>
+            <button class="btn" style="background:#06b6d4; color:white;" onclick="toggle('ex8')">Poora Padhein</button>
+        </div>
+
+        <div class="article-card" style="border-left-color: #ef4444;">
+            <h3>9. AI Voice Cloning Se Bach ke Rahein! ⚠️</h3>
+            <p>AI se hone wale naye tarah ke scams se khud ko bachayein.</p>
+            <div id="ex9" class="more-text">
+                <p>Aaj kal scammers AI se aapke doston ki awaaz nikaal kar paise maangte hain. Kabhi bhi anjaan link par click na karein.</p>
+            </div>
+            <button class="btn" style="background:#ef4444; color:white;" onclick="toggle('ex9')">Poora Padhein</button>
+        </div>
+
+        <div class="article-card" style="border-left-color: #6366f1;">
+            <h3>10. AI Future 2026: Kya Hoga Naya? 🤖</h3>
+            <p>Aglo 2 saalon mein AI hamari zindagi kaise badalne wala hai.</p>
+            <div id="ex10" class="more-text">
+                <p>Aane wale samay mein AI robots ghar ke kaamon mein madad karenge aur education ekdum personal ho jayegi.</p>
+            </div>
+            <button class="btn" style="background:#6366f1; color:white;" onclick="toggle('ex10')">Poora Padhein</button>
+        </div>
+
+        <div class="ad-space">
+            <p>ADVERTISEMENT - BOTTOM FOOTER AD</p>
         </div>
     </div>
 
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>About Us</h3>
+                <p>Humara mission hai har Hindustani ko AI ki takat se jodhna taaki sab aage badh sakein.</p>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: <b>bilkanbhengra6-ux@gmail.com</b></p>
+                <p>Privacy Policy | Terms of Use</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 40px; color: #475569;">&copy; 2026 AI Guide Hindi. All rights reserved.</p>
+    </footer>
+
     <script>
-        function toggleText(id) {
+        function toggle(id) {
             var x = document.getElementById(id);
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+            if (x.style.display === "block") { x.style.display = "none"; } 
+            else { x.style.display = "block"; }
         }
     </script>
 </body>
 </html>
+
